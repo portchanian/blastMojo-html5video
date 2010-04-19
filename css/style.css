@@ -1,0 +1,104 @@
+/**
+ * Global CSS Styles : Colours, typography, non structural layout. This is the file you're most likely to need to edit.
+*/
+
+
+/* Color
+===================================================*/
+/* --------------------------------------------------
+black :  #000000
+grey-dark : #414042
+grey-light : #6D6E71
+orange : #F15B40
+blue-light : #B0CCD9
+blue-dark :#009CAD
+-----------------------------------------------------*/
+
+
+
+body {
+  color: #000;
+}
+
+a:link {
+  color: #009CAD;
+}
+a:visited {
+  color: #B0CCD9;
+}
+a:hover {
+  color:#B0CCD9;
+}
+a:active {
+  color: #009CAD;
+}
+
+h1,h2,h3,h4 {
+  color: #000;
+}
+
+pre {
+  background-color:#000;
+  border-color:#000;
+}
+
+.comment {
+  background-color: #000;
+}
+
+black {
+	color: #000000;
+}
+
+grey-dark {
+	color: #414042;
+}
+
+grey-light {
+	color: #6D6E71;
+}
+
+orange {
+	color: #F15B40;
+}
+
+blue-light{
+	color: #B0CCD9;
+}
+
+blue-dark {
+	color: #009CAD;
+}
+
+
+
+/* Typography
+===================================================*/
+/* --------------------------------------------------
+Default browser text size roughly 16px.
+A font-size of 0.875em is equal to 14px.
+eg: 16 x 0.875 = 14
+-----------------------------------------------------*/
+
+body {
+  font-family: verdana;
+  text-align:center;	/* layout centering : force whatever inside container to be centered */
+  font-size:100%;		/*	to have all browsers rendering text at an identical size      */
+  line-height:1.125em;
+	color: #000;
+}
+
+* {
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+  text-align: left;
+  text-indent: 0;
+}
+
+#main-panel{
+	 font-size: 0.625em; /* 16x0.625=10px. */
+}	
+
+
+

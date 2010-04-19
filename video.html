@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<title>Example video player with mojo & flash fallback</title>
+	
+	<!-- Global CSS-->
+	<link type="text/css" rel="stylesheet" media="screen" href="css/reset.css" />
+	<link type="text/css" rel="stylesheet" media="screen" href="css/layout.css" />
+	<link type="text/css" rel="stylesheet" media="screen" href="css/style.css" />
+	
+	<!-- Local CSS -->
+	<link type="text/css" rel="stylesheet" media="screen" href="css/pages/video/style.css" />
+	
+  </head>
+  <body>
+		<div id="main-panel">
+			
+			<div id="video-playa"><!-- Video Player starts here -->
+				
+				<!--html5 video -->
+				<video id="video-html" controls>
+					<source src="video/centro-movie.ogv" type="video/ogg"> <!-- for Firefox -->
+					<source src="video/centro-movie.mov"> <!-- for Safari -->
+					Your browser does not support the video element.
+				</video>
+	
+				<!--Flash fallback video -->
+				<div id="video-flash"><a href src="../video/centro-movie.mov"></a></div>
+					
+				<!--html5 video navigation-->
+				<div id="video-nav">
+			    	<button id="btn-play">Play</button>
+			    	<button id="btn-pause">Pause</button>
+			    	<button id="btn-volume-up">Volume Up</button>
+			    	<button id="btn-volume-down">Volume Down</button>
+			    	<button id="btn-volume-mute">Mute</button>
+			    	<button id="btn-volume-unmute">Unmute</button>
+				</div>
+				
+			</div><!-- Video Player ends here -->
+		</div>
+	<!-- ************************************ CORE JAVASCRIPT ********************************** -->
+
+	<!-- OMNITURE -->
+	<script language="JavaScript">var s_account="";</script>
+	<!-- DOJO -->
+	<script type="text/javascript" djconfig="isDebug:false, parseOnLoad:true, usePlainJson:true" src="js/dist/dojo.js.uncompressed.js"></script>
+	<!-- Library files -->
+	<script type="text/javascript" src="js/lib/mojo/mojo.js.uncompressed.js"></script>
+	<script type="text/javascript" src="js/lib/jquery/jquery-1.3.2.js.uncompressed.js"></script>
+	<script type="text/javascript" src="js/lib/jquery_more/jquery.cookie.js.uncompressed.js"></script>
+	<script type="text/javascript" src="js/lib/jquery_more/jquery.validate.js.uncompressed.js"></script>
+	<script type="text/javascript" src="js/lib/jquery_more/jquery.easing.1.3.js.uncompressed.js"></script>
+	<script type="text/javascript" src="js/lib/swfobject/swfobject.js.uncompressed.js"></script>
+	<script type="text/javascript" src="js/lib/rsh/dhtmlHistory.js.uncompressed.js"></script>
+	<script type="text/javascript" src="js/lib/omniture/s_code.js.uncompressed.js"></script>
+	<!-- Mojo Instantiation is done after load -->
+	<script type="text/javascript" src="js/foo_config.js"></script>
+
+	<!-- ************************************ THIRD PARTY ********************************** -->
+	
+  </body>
+</html>
+
+

@@ -1,0 +1,12 @@
+/* Positioning
+===================================================*/
+
+#main-panel {
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	width:640px;
+	height:500px;
+	display: block;
+	border: 1px solid black;
+}
